@@ -1,11 +1,14 @@
-﻿#pragma TextEncoding = "UTF-8"
-#pragma rtGlobals=3		// Use modern global access method and strict wave access.
+﻿//Functions used for analysis in Murphy-Baum and Awatramani, 2022 in Cell Reports.
 
+//Coded in IGOR PRO 8, although most of the functions are back-compatible with Igor 7
 
-//Functions used for analysis in Murphy-Baum and Awatramani, 2022 in Cell Reports.
 //These functions are meant to be used within the NeuroTools interface (DOI in the paper) and the functions won't compile without it.
 //However, the important mathematical and logical operations used should be apparent and reproducible.
 
+
+
+#pragma TextEncoding = "UTF-8"
+#pragma rtGlobals=3		// Use modern global access method and strict wave access.
 
 Function NT_PeakTime(DS_ROIs,PercentPeak,FitTime,StartTime,EndTime)
 	String DS_ROIs //Data set containing Ca signal waves.
